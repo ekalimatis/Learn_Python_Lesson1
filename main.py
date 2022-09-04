@@ -1,37 +1,34 @@
-# переменые
-# 1
-name = 'Eva'
-print(name)
-# простые типы данных
-# 1
-a = 2
-b = 0.5
-print(a + b)
-# 2
-name = input('Мое имя:')
-print('Привет,', name, '!')
-# 3
-v = int(input('Введите число от 1 до 10'))
-print(v + 10)
-# 4
-print(float('1'))
-print(float('2.5'))
-print(bool(1))
-print(bool(''))
-print(bool(0))
-# списки
-# 1
-num = [3, 5, 7, 9, 10.5]
-print(num)
-num.append('Python')
-print(num)
-print(len(num))
-print(num[1], num[-1], num[1:4])
-num.remove('Python')
-print(num)
-a={"city": "Москва", "temperature": "5"}
-print(a["city"])
-print(a.get("country", 'Россия'))
-a["date"]="27.05.2019"
-print(a)
+# Комплексные типы данных, списки
+# Задание 1
+my_list = [3, 5, 7, 9, 10.5]
+print(my_list)
+my_list.append('Python')
+print(len(my_list))
 
+# Заджание 2
+print(my_list[0])
+print(my_list[-1])
+print(my_list[1:5])
+my_list.remove('Python')
+
+# Комплексные типы данных, словари
+# Задание 1
+my_dict={'city': 'Москва', 'temperature': 20}
+print(my_dict['city'])
+my_dict['temperature']-=5
+print(my_dict)
+
+# Задание 2
+print('country' in my_dict)
+print(my_dict.get('country', 'Россия'))
+my_dict['date']='27.05.2019'
+print(len(my_dict))
+
+# Функции
+# Задание 1
+def get_summ(one, two, delimitewr='&'):
+    return delimitewr.join((str(one),str(two)))
+
+result = get_summ('Learn', 'python')
+print(result)
+print(result.upper())
