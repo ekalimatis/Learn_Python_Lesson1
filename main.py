@@ -13,7 +13,7 @@ my_list.remove('Python')
 
 # Комплексные типы данных, словари
 # Задание 1
-my_dict = {'city' : 'Москва', 'temperature' : '20'}
+my_dict = {'city': 'Москва', 'temperature': '20'}
 print(my_dict['city'])
 my_dict['temperature'] = str(int(my_dict['temperature']) - 5)
 print(my_dict)
@@ -27,7 +27,7 @@ print(len(my_dict))
 # Функции
 # Задание 1
 def get_summ(one, two, delimitewr = '&'):
-    return str(one) + delimitewr + str(two)
+    return f'{one} {delimitewr} {two}'
 
 result = get_summ('Learn', 'python')
 print(result)
